@@ -1,5 +1,7 @@
 -Basiert auf chardev Template
 -Initialisiert alle GPIOs des Raspberry Pi4 als Ausgänge
+-Die Offsets von den GPIOs koennen im File /sys/kernel/debug/gpio
+ auf dem Raspberry Pi4 eingesehen werden
 -Alle GPIOs können einzeln auf high oder low gesetzt werden
 -In ~/.bashrc "export ARCH=arm64" und "export CROSS_COMPILE=aarch64-linux-gnu-"
 -Bauen mit "make KDIR=/home/nicolai/Develop/Raspbian/linux"

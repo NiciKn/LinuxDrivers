@@ -1,0 +1,12 @@
+-Chardev template
+-In ~/.bashrc "export ARCH=arm64" und "export CROSS_COMPILE=aarch64-linux-gnu-"
+-Bauen mit "make KDIR=/home/nicolai/Develop/Raspbian/linux"
+-.ko Modul auf Raspberry Pi kopieren z.B. mit 
+  "scp charDevTempl.ko nicolai@192.168.2.50:/home/nicolai/temp"
+-Modul installieren mit "sudo insmod charDevTempl.ko"
+-Installierte Module anschauen mit "lsmod"
+-Installierte Devices anschauen mit "ls /dev"
+-Lesen z.B. mit "sudo cat /dev/charDevTempl"
+-Schreiben z.B. mit "echo "Hi" | sudo tee /dev/charDevTempl"
+-Modul entfernen mit "sudo rmmod charDevTempl"
+-Status Nachrichten anschauen mit z.B. "dmesg | tail -n 20"

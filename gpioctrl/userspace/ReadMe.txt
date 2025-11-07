@@ -1,0 +1,2 @@
+-Bauen mit "aarch64-linux-gnu-gcc -o toogle_gpio toggle_gpio.c"
+-Anwenden mit "./toogle_gpio 17" für GPIO 17 (0-27 möglich)
